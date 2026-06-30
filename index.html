@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashik Ali Latheef — Senior Software Engineer & Founder, BootChamps</title>
+<meta name="description" content="Ashik Ali Latheef — Senior Full Stack Engineer with 5+ years building enterprise software for American Express, Verizon and Societe Generale. Founder of BootChamps, mentoring the next generation of developers.">
+<meta name="theme-color" content="#050505">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ashik Ali Latheef — Senior Software Engineer & Founder, BootChamps">
+<meta property="og:description" content="Building scalable software. Mentoring future engineers. Creating real-world learning experiences.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Background canvas (hero only) -->
+<canvas id="particles"></canvas>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Ashik Ali Latheef — home">
+      <span class="logo-mark">A.</span><span class="logo-cursor">_</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link"><span class="nav-num">01</span>About</a>
+      <a href="#experience" class="nav-link"><span class="nav-num">02</span>Experience</a>
+      <a href="#skills" class="nav-link"><span class="nav-num">03</span>Skills</a>
+      <a href="#projects" class="nav-link"><span class="nav-num">04</span>Projects</a>
+      <a href="#mentorship" class="nav-link"><span class="nav-num">05</span>Mentorship</a>
+      <a href="#contact" class="nav-link"><span class="nav-num">06</span>Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="assets/Ashik-Ali-Latheef-Resume.pdf" class="btn btn-ghost btn-sm" download>Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-inner">
+
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span class="dot"></span>// available for senior engineering roles</p>
+
+      <h1 class="hero-title">
+        Building scalable software.<br>
+        Mentoring future <span class="text-accent">engineers</span>.<br>
+        Creating real-world learning.
+      </h1>
+
+      <p class="hero-sub">
+        I'm <strong>Ashik Ali Latheef</strong> — a Senior Software Engineer and Full Stack Developer
+        with 5+ years shipping enterprise products, and the founder of
+        <strong class="text-accent">BootChamps</strong>, a bootcamp built to turn students into
+        industry-ready developers.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/Ashik-Ali-Latheef-Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Connect with Me</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-item"><span class="meta-num">5+</span><span class="meta-label">Years Experience</span></div>
+        <div class="meta-divider"></div>
+        <div class="meta-item"><span class="meta-num">147+</span><span class="meta-label">Students Mentored</span></div>
+        <div class="meta-divider"></div>
+        <div class="meta-item"><span class="meta-num">4</span><span class="meta-label">Enterprise Clients</span></div>
+      </div>
+    </div>
+
+    <div class="hero-terminal reveal" style="--delay:.15s">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+          <span class="terminal-title">ashik@bootchamps ~ </span>
+        </div>
+        <div class="terminal-body" id="terminalBody" aria-hidden="true">
+          <!-- typed via JS -->
+        </div>
+      </div>
+      <div class="terminal-glow"></div>
+    </div>
+
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+    <span class="scroll-line"></span>
+    <span>scroll</span>
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="eyebrow reveal">// 01 — about</p>
+    <h2 class="section-title reveal">The short version, and the longer one</h2>
+
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="about-avatar" aria-hidden="true">
+          <span>AA</span>
+        </div>
+        <ul class="fact-list">
+          <li><span>Based in</span><strong>Chennai, India</strong></li>
+          <li><span>Focus</span><strong>Full Stack &amp; Architecture</strong></li>
+          <li><span>Currently</span><strong>Senior Software Engineer</strong></li>
+          <li><span>Side quest</span><strong>Founder, BootChamps</strong></li>
+        </ul>
+        <div class="stack-pills">
+          <span>React</span><span>Node.js</span><span>Nest.js</span><span>TypeScript</span><span>PostgreSQL</span><span>MongoDB</span>
+        </div>
+      </div>
+
+      <div class="about-copy reveal" style="--delay:.1s">
+        <p>
+          I started out the way most engineers do — curious about how things break, and more
+          curious about how to put them back together better. Five years and a handful of
+          enterprise platforms later, that curiosity has turned into a career spent building
+          systems that hold up under real traffic, real deadlines, and real stakes: products
+          used inside American Express, Verizon, and Societe Generale.
+        </p>
+        <p>
+          My engineering philosophy is simple — <strong>boring infrastructure, exciting product.</strong>
+          The best systems are the ones nobody has to think about: predictable APIs, clean
+          component architecture, deploys that don't require luck. I'd rather spend a week
+          getting an abstraction right than a year paying interest on a wrong one.
+        </p>
+        <p>
+          Somewhere along the way, I noticed the gap between what college teaches and what
+          the first day of a real engineering job actually demands — and decided to close it
+          myself. That became <strong class="text-accent">BootChamps</strong>. Mentoring isn't a
+          side project for me; it's the same instinct that makes me a better engineer, applied
+          to people instead of systems — find where the gap is, then build the bridge.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <p class="eyebrow reveal">// 02 — experience</p>
+    <h2 class="section-title reveal">git log --author="ashik" --oneline</h2>
+    <p class="section-sub reveal">Five years of shipping production systems for organizations where downtime isn't an option.</p>
+
+    <div class="commit-log">
+
+      <article class="commit reveal">
+        <div class="commit-node"></div>
+        <div class="commit-card">
+          <div class="commit-head">
+            <span class="commit-hash">#a3f9c1</span>
+            <span class="commit-branch">main</span>
+            <span class="commit-date">2023 — Present</span>
+          </div>
+          <h3>Senior Software Engineer · American Express</h3>
+          <p>Own architecture for a high-traffic React + Node.js platform serving internal
+            financial-operations teams. Lead microservice decomposition of a legacy monolith,
+            cutting deployment time and isolating failure domains.</p>
+          <ul class="commit-tags">
+            <li>Scalable Systems</li><li>Microservices</li><li>React Architecture</li><li>CI/CD</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="commit reveal" style="--delay:.08s">
+        <div class="commit-node"></div>
+        <div class="commit-card">
+          <div class="commit-head">
+            <span class="commit-hash">#7e2d40</span>
+            <span class="commit-branch">verizon/platform</span>
+            <span class="commit-date">2021 — 2023</span>
+          </div>
+          <h3>Software Engineer · Verizon</h3>
+          <p>Built and maintained customer-facing modules on a Nest.js + PostgreSQL backend
+            serving millions of requests daily. Introduced performance budgets and lazy-loading
+            patterns that materially improved Core Web Vitals across the product.</p>
+          <ul class="commit-tags">
+            <li>Enterprise Software</li><li>Performance Optimization</li><li>Nest.js</li><li>PostgreSQL</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="commit reveal" style="--delay:.16s">
+        <div class="commit-node"></div>
+        <div class="commit-card">
+          <div class="commit-head">
+            <span class="commit-hash">#1b6f88</span>
+            <span class="commit-branch">socgen/core-banking</span>
+            <span class="commit-date">2020 — 2021</span>
+          </div>
+          <h3>Full Stack Developer · Societe Generale</h3>
+          <p>Delivered secure internal tooling for a core-banking team, working across React,
+            Express.js and MongoDB. Partnered directly with compliance and risk stakeholders to
+            translate dense regulatory requirements into shippable features.</p>
+          <ul class="commit-tags">
+            <li>Financial Systems</li><li>Express.js</li><li>MongoDB</li><li>Stakeholder Delivery</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="commit reveal" style="--delay:.24s">
+        <div class="commit-node"></div>
+        <div class="commit-card">
+          <div class="commit-head">
+            <span class="commit-hash">#f041aa</span>
+            <span class="commit-branch">zaigo/init</span>
+            <span class="commit-date">2019 — 2020</span>
+          </div>
+          <h3>Software Engineer · Zaigo</h3>
+          <p>First engineering role out of college. Shipped full-stack features end to end on a
+            React + Express stack, and got the early hands-on reps that taught me how product,
+            design, and engineering actually negotiate with each other.</p>
+          <ul class="commit-tags">
+            <li>Full Stack</li><li>React</li><li>Express.js</li><li>Foundations</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="container">
+    <p class="eyebrow reveal">// 03 — stack</p>
+    <h2 class="section-title reveal">The tools I reach for</h2>
+    <p class="section-sub reveal">Proficiency reflects production use, not just familiarity.</p>
+
+    <div class="skills-tabs reveal" id="skillsTabs" role="tablist">
+      <button class="skill-tab active" data-cat="frontend" role="tab" aria-selected="true">Frontend</button>
+      <button class="skill-tab" data-cat="backend" role="tab" aria-selected="false">Backend</button>
+      <button class="skill-tab" data-cat="databases" role="tab" aria-selected="false">Databases</button>
+      <button class="skill-tab" data-cat="cloud" role="tab" aria-selected="false">Cloud</button>
+      <button class="skill-tab" data-cat="devops" role="tab" aria-selected="false">DevOps</button>
+      <button class="skill-tab" data-cat="tools" role="tab" aria-selected="false">Tools</button>
+    </div>
+
+    <div class="skills-panel reveal" id="skillsPanel">
+      <!-- populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <p class="eyebrow reveal">// 04 — projects</p>
+    <h2 class="section-title reveal">Selected work</h2>
+    <p class="section-sub reveal">Representative engagements — sanitized for confidentiality, structured around the problems they solved.</p>
+
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="project-head">
+          <span class="project-tag">Fintech · Internal Platform</span>
+          <h3>Operations Console Re-architecture</h3>
+        </div>
+        <div class="project-row"><span>Problem</span><p>A legacy monolith made every release a coordinated, multi-team event, and a single failing module could take down unrelated features.</p></div>
+        <div class="project-row"><span>Solution</span><p>Decomposed the monolith into independently deployable microservices behind a unified React shell, with clear contract boundaries between teams.</p></div>
+        <div class="project-row"><span>Architecture</span><p>React micro-frontends, Node.js services, event-driven messaging, isolated CI/CD pipelines per service.</p></div>
+        <div class="project-row impact"><span>Impact</span><p>Deployment frequency increased and incident blast-radius dropped, since a single service failure no longer affected the whole platform.</p></div>
+        <ul class="project-stack">
+          <li>React</li><li>Node.js</li><li>TypeScript</li><li>Microservices</li>
+        </ul>
+      </article>
+
+      <article class="project-card reveal" style="--delay:.08s">
+        <div class="project-head">
+          <span class="project-tag">Telecom · Customer Platform</span>
+          <h3>Core Web Vitals Recovery</h3>
+        </div>
+        <div class="project-row"><span>Problem</span><p>A customer-facing product was shedding traffic at the funnel's first step — slow first paint on key landing routes.</p></div>
+        <div class="project-row"><span>Solution</span><p>Introduced route-level code splitting, image and font budgets, and rebuilt the worst-offending pages around server-rendered critical content.</p></div>
+        <div class="project-row"><span>Architecture</span><p>Nest.js backend, PostgreSQL, server-side rendering for above-the-fold content, lazy hydration for the rest.</p></div>
+        <div class="project-row impact"><span>Impact</span><p>Page load times improved meaningfully, with measurable lift in funnel completion on the affected routes.</p></div>
+        <ul class="project-stack">
+          <li>Nest.js</li><li>PostgreSQL</li><li>Performance</li><li>SSR</li>
+        </ul>
+      </article>
+
+      <article class="project-card reveal" style="--delay:.16s">
+        <div class="project-head">
+          <span class="project-tag">Education · BootChamps</span>
+          <h3>BootChamps Curriculum Platform</h3>
+        </div>
+        <div class="project-row"><span>Problem</span><p>Self-taught and early-career developers had plenty of tutorials, but no structured, project-based path from fundamentals to job-ready.</p></div>
+        <div class="project-row"><span>Solution</span><p>Designed a 10-day intensive curriculum with daily project checkpoints, mock technical interviews, and a brand-consistent presentation system.</p></div>
+        <div class="project-row"><span>Architecture</span><p>Full-stack learning portal, structured roadmap content, and a slide/presentation system built for repeatable, high-quality delivery.</p></div>
+        <div class="project-row impact"><span>Impact</span><p>147+ students mentored through structured, practical learning experiences bridging academics and industry expectations.</p></div>
+        <ul class="project-stack">
+          <li>Curriculum Design</li><li>Mentorship</li><li>Full Stack</li><li>Founder-led</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENTORSHIP ===== -->
+<section class="section section-feature" id="mentorship">
+  <div class="container">
+    <p class="eyebrow reveal">// 05 — leadership &amp; mentorship</p>
+    <h2 class="section-title reveal">I build engineers, not just software</h2>
+
+    <div class="mentor-grid">
+      <div class="mentor-copy reveal">
+        <p>
+          Founding <strong class="text-accent">BootChamps</strong> came from a simple observation:
+          the distance between "I finished a course" and "I'm ready for my first engineering job"
+          is wider than it should be — and almost nobody is designing for that gap on purpose.
+        </p>
+        <p>
+          I treat teaching like I treat system design: start from the failure modes. Where do
+          students actually get stuck? Where does confidence break before competence does? That's
+          where I design structured roadmaps, run mock technical interviews, and build
+          presentations that compress months of "figuring it out alone" into days of guided,
+          project-based practice.
+        </p>
+        <p>
+          It's the work I'm proudest of — not because it's easier than enterprise engineering,
+          but because the compounding return is different. A well-architected service serves
+          requests. A well-mentored engineer goes on to build the next ten things.
+        </p>
+
+        <div class="mentor-actions">
+          <a href="#contact" class="btn btn-primary">Talk Mentorship</a>
+          <a href="#contact" class="btn btn-ghost">Get Involved with BootChamps</a>
+        </div>
+      </div>
+
+      <div class="mentor-stats reveal" style="--delay:.1s">
+        <div class="mentor-stat"><span class="count" data-count="147">0</span><small>Students Mentored</small></div>
+        <div class="mentor-stat"><span class="count" data-count="10">0</span><small>Day Structured Curriculum</small></div>
+        <div class="mentor-stat"><span class="count" data-count="40">0</span><small>Mock Interviews Conducted</small></div>
+        <div class="mentor-stat"><span class="count" data-count="100">0</span><small>% Project-Based Learning</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section class="section" id="achievements">
+  <div class="container">
+    <p class="eyebrow reveal">// 06 — by the numbers</p>
+    <h2 class="section-title reveal">Track record</h2>
+
+    <div class="bento">
+      <div class="bento-card bento-lg reveal">
+        <span class="count-wrap"><span class="count" data-count="5">0</span><span class="count-suffix">+</span></span>
+        <p>Years of Professional Experience</p>
+      </div>
+      <div class="bento-card reveal" style="--delay:.05s">
+        <span class="count-wrap"><span class="count" data-count="147">0</span><span class="count-suffix">+</span></span>
+        <p>Students Mentored</p>
+      </div>
+      <div class="bento-card reveal" style="--delay:.1s">
+        <span class="count-wrap"><span class="count" data-count="4">0</span></span>
+        <p>Enterprise Clients</p>
+      </div>
+      <div class="bento-card reveal" style="--delay:.15s">
+        <span class="count-wrap"><span class="count" data-count="15">0</span><span class="count-suffix">+</span></span>
+        <p>Technologies in Production</p>
+      </div>
+      <div class="bento-card bento-wide reveal" style="--delay:.2s">
+        <span class="count-wrap"><span class="count" data-count="1">0</span></span>
+        <p>Bootcamp Founded — BootChamps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section-alt" id="testimonials">
+  <div class="container">
+    <p class="eyebrow reveal">// 07 — testimonials</p>
+    <h2 class="section-title reveal">What people say</h2>
+    <p class="section-sub reveal placeholder-note">Placeholder quotes — swap in real recommendations before publishing.</p>
+
+    <div class="testimonial-slider reveal">
+      <div class="testimonial-track" id="testiTrack">
+        <blockquote class="testimonial-card">
+          <p>"Ashik is the engineer you put on the problem nobody else wants to touch. He
+            doesn't just fix it — he leaves the system better documented and harder to break
+            next time."</p>
+          <footer><strong>Engineering Manager</strong><span>Fintech Client</span></footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"What stood out wasn't the code — it was how clearly he explained the trade-offs.
+            Stakeholders who don't speak 'engineering' still walked away understanding exactly
+            what we were building and why."</p>
+          <footer><strong>Product Lead</strong><span>Telecom Partner</span></footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"I went through the BootChamps program with zero professional experience. Ten days
+            later I had a portfolio, a mock interview under my belt, and an actual plan. It
+            changed the trajectory of my job search."</p>
+          <footer><strong>BootChamps Graduate</strong><span>Cohort Student</span></footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"Ashik mentors the way he engineers — methodically, patiently, and with a real eye
+            for where people actually get stuck."</p>
+          <footer><strong>Senior Developer</strong><span>Former Colleague</span></footer>
+        </blockquote>
+      </div>
+      <div class="testimonial-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <p class="eyebrow reveal">// 08 — contact</p>
+    <h2 class="section-title reveal">Let's build something</h2>
+    <p class="section-sub reveal">Open to senior engineering roles, architecture consults, and mentorship collaborations.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What are you building?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-side reveal" style="--delay:.1s">
+        <a class="contact-link" href="mailto:hello@ashikali.dev">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+          </span>
+          <span><strong>Email</strong><small>hello@ashikali.dev</small></span>
+        </a>
+        <a class="contact-link" href="https://linkedin.com/in/ashikalilatheef" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z" opacity="0"/><path d="M6 9h2.2v9H6zM7.1 5.3a1.3 1.3 0 110 2.6 1.3 1.3 0 010-2.6zM11 9h2.1v1.3c.5-.8 1.4-1.5 2.9-1.5 2.1 0 3.5 1.4 3.5 4.1V18h-2.2v-4.6c0-1.4-.5-2.2-1.7-2.2-1.1 0-1.7.7-1.7 2.2V18H11z"/></svg>
+          </span>
+          <span><strong>LinkedIn</strong><small>/in/ashikalilatheef</small></span>
+        </a>
+        <a class="contact-link" href="https://github.com/ashikali" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 00-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.3-.3-4.6-1.1-4.6-5a3.9 3.9 0 011-2.7 3.6 3.6 0 010-2.7s.9-.3 2.9 1a10 10 0 015.3 0c2-1.3 2.9-1 2.9-1a3.6 3.6 0 010 2.7 3.9 3.9 0 011 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7 1 .7 2v3c0 .3.2.6.7.5A10 10 0 0012 2z"/></svg>
+          </span>
+          <span><strong>GitHub</strong><small>/ashikali</small></span>
+        </a>
+        <a class="contact-link" href="#" onclick="return false;">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-7.4 7-12.5A7 7 0 105 9.5C5 14.6 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+          </span>
+          <span><strong>Location</strong><small>Chennai, India</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">A.</span><span class="logo-cursor">_</span>
+      <p>Senior Software Engineer · Founder, BootChamps</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#mentorship">Mentorship</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-meta">
+      <p>&copy; <span id="year"></span> Ashik Ali Latheef. Built from scratch — no templates.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="./script.js"></script>
+</body>
+</html>
